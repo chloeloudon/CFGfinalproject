@@ -1,2 +1,2 @@
 # CFGfinalproject
-Website built for Code First Girls Intro to Web Dev final project
+This website was built as part of the Code First Girls Intro to Web Dev Coding Kickstarter course, sponsered by Trapdoor Labs. The final project is a culmination of what we learnt over the 8 weeks, allowing us to show off our newly acquired skills. My final project is a space travel agency website built using HTML, CSS and Javascript, offering a selection of different destinations, contact form and quiz (still in progress).
