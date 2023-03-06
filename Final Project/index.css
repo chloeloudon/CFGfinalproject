@@ -1,0 +1,498 @@
+html {
+    scroll-behavior: smooth;
+    overflow-y: scroll; overflow-x:hidden; 
+    padding: 0;
+    margin: 0;
+    width: 100%;
+}
+
+body {
+    background-image: url(Images/spacebackground.jpg);
+    position: absolute;
+}
+
+/*Nav Bar
+======================================== */
+
+.navbar {
+    background-color: rgb(0, 0, 0);
+    width: 100%;
+    margin: 0px;
+ }
+ 
+li.li-nav {
+     float: left;
+ }
+    
+ul.nav {
+     background-color: black;
+     list-style-type: none;
+     margin: 0;
+     padding: 0;
+     width: 100%;
+     border: 2px solid black;
+     overflow: hidden;
+    
+ }
+    
+li.li-nav a {
+     display: block;
+     padding: 14px 16px;
+     color: white;
+     font-family: "Orbitron";
+     font-size: 25px;
+     text-align: center;
+     text-decoration: none;
+    }
+    
+li a:hover {
+     color:indigo;
+     transition: color 0.5s ease-in;
+ }
+
+li a:active {
+    color:rgb(183, 179, 204);
+} 
+
+.dropbtn {
+    background-color: black;
+    color: white;
+    padding: 14px 16px;
+    font-size: 25px;
+    font-family: "Orbitron";
+    border: none;
+  }
+  
+  /* The container <div> - needed to position the dropdown content */
+  .dropdown {
+    position: static;
+    display: inline-block;
+  }
+  
+  /* Dropdown Content (Hidden by Default) */
+  .dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #000000;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+  }
+  
+  /* Links inside the dropdown */
+  .dropdown-content a {
+    color: rgb(183, 179, 204);
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+  }
+  
+  /* Change color of dropdown links on hover */
+  .dropdown-content a:hover {background-color: #ddd;}
+  
+  /* Show the dropdown menu on hover */
+  .dropdown:hover .dropdown-content {display: block;}
+  
+  /* Change the background color of the dropdown button when the dropdown content is shown */
+  .dropdown:hover .dropbtn {color: indigo; transition: color 0.5s ease-in; cursor: pointer;}
+
+/*Main Page
+======================================== */
+
+.title-head {
+    background-color: rgb(59, 57, 57, 0.8);
+    padding: 20px 20px 100px 20px;
+    margin: 80px 0px;
+ }
+ 
+.main-title {
+     color: rgb(183, 179, 204);
+     font-size: 6rem;
+     font-family: "Orbitron";
+     text-align: center;
+ }
+ 
+.subhead {
+    color: rgb(183, 179, 204);
+    font-size: 2rem;
+    font-family: "Orbitron";
+    text-align: center;
+    padding: 0px 0px 20px 0px;
+
+}
+
+.gobutton {
+    font-family: "Orbitron";
+    font-size: 16px;
+    text-decoration: none;
+    color:rgb(183, 179, 204);
+    display: flex;
+    text-align: center;
+    margin: auto;
+    padding: 14px 40px;
+    border-radius: 12px;
+}
+
+.gobutton a {
+    text-decoration:none;
+}
+
+.gobutton:hover {
+    box-shadow: 0 12px 16px 0 rgba(0,0,0,0.24), 0 17px 50px 0 rgba(0,0,0,0.19);
+    background-color:#000000;
+    transition: background-color 0.2s ease-in;
+    cursor: pointer;
+    text-decoration: none;
+}
+
+.gobutton:visited {
+    text-decoration: none;
+}
+
+.gobutton:active {
+    text-decoration: none;
+}
+
+/*Options Menu
+======================================== */
+
+.row {
+    display: flex;
+    column-gap: 10px;
+}
+
+.row:after {
+    content: "";
+    display: table;
+    clear: both;
+  }
+
+.column {
+    background-color: #000000;
+    float: left;
+    width: 33.33%;
+    text-align: center;
+    padding-bottom: 30px;
+
+}
+
+@media screen and (max-width: 600px) {
+    .column {
+      width: 100%;
+    }
+  }
+    
+
+.option-title {
+    color: #ffffff;
+    font-family: "Orbitron";
+    font-size: 3.5rem;
+    padding: 5px;
+}
+
+.optiontext {
+    color: #ffffff;
+    font-family: "Space Mono";
+    font-size: 1.5rem;
+    padding-left: 5px;
+    padding-right: 5px;
+}
+
+.optbutton {
+    font-family: "Orbitron";
+    font-size: 14px;
+    text-decoration: none;
+    color:indigo;
+    display: flex;
+    text-align: center;
+    margin: auto;
+    padding: 14px 40px;
+    border-radius: 12px;
+    cursor: pointer;
+
+}
+
+.optbutton a {
+
+    text-decoration: none;
+}
+
+.optbutton:hover {
+    box-shadow: 0 12px 16px 0 rgba(0,0,0,0.24), 0 17px 50px 0 rgba(0,0,0,0.19);
+    background-color:rgb(183, 179, 204);
+    transition: background-color 0.2s ease-in;
+    cursor: pointer;
+    text-decoration: none;
+}
+
+.optbutton:visited {
+    text-decoration: none;
+    color: indigo;
+}
+
+.optbutton:active {
+    text-decoration: none;
+}
+
+/*Footer
+======================================== */
+
+.mainfoot {
+    background-color:rgb(183, 179, 204);
+    color: black;
+    text-align: center;
+    margin-top: 60px;
+    padding: 50px;
+    font-family: "Space Mono";
+}
+
+/*About Page
+======================================== */
+
+.abt {
+    background-color:rgb(0, 0, 0, 0.6);
+    padding: 0px 30px 30px 30px;
+}
+
+.abt-title {
+    font-family: "Orbitron";
+    color:rgb(183, 179, 204);
+    text-align: center;
+    font-size: 5rem;
+}
+
+.abt-text {
+    color:#ffffff;
+    font-size: 2rem;
+    text-align: center;
+    font-family: "Space Mono";
+}
+
+/*Contact Page
+======================================== */
+
+.card {
+    background-color: rgb(183, 179, 204, 0.6);
+    border-radius: 10px;
+    box-shadow: 0 0 40px 2px rgba(0, 0, 0, 0.1);
+    padding: 30px 100px 15px;
+    margin-top: 20px;
+    width: 100%;
+  }
+
+.section-header {
+    color:#000000;
+    font-family: "Orbitron";
+    font-size: 2rem;
+  }
+  
+input,
+select,
+textarea {
+    background-color: #FFFFFF;
+    border: 1px solid #F2F3F5;
+    border-radius: 3px;
+    box-shadow: inset 1px 1px 3px 0 rgba(189,191,192,0.10);
+    height: 35px;
+    margin-bottom: 15px;
+    padding: 10px;
+    transition: border-color 0.5s ease;
+    width: 100%;
+  }
+  
+input[type="submit"] {
+    cursor: pointer;
+    height: auto;
+    width: auto;
+  }
+  
+input:active,
+input:focus,
+textarea:active,
+textarea:focus {
+    border: 1px solid #CCCCCC;
+    outline: none;
+  }
+  
+textarea {
+    height: 100px;
+  }
+
+.form-button {
+
+    font-family: "Orbitron";
+    font-size: 14px;
+    text-decoration: none;
+    color:indigo;
+    display: flex;
+    text-align: center;
+    margin: auto;
+    padding: 14px 40px;
+    border-radius: 12px;
+    cursor: pointer;
+
+  }
+
+.form-button a {
+
+    text-decoration: none;
+}
+
+.form-button:hover {
+    box-shadow: 0 12px 16px 0 rgba(0,0,0,0.24), 0 17px 50px 0 rgba(0,0,0,0.19);
+    background-color:#000000;
+    color:rgb(183, 179, 204);
+    transition: background-color 0.2s ease-in;
+    cursor: pointer;
+    text-decoration: none;
+}
+
+.form-button:visited {
+    text-decoration: none;
+    color: indigo;
+}
+
+/* Quiz Page
+================================ */
+
+.quiz-form {
+    background-color: rgb(183, 179, 204);
+    text-align: center;
+    border-radius: 15px;
+    margin: 0px;
+    font-family: "Space Mono";
+    padding: 0px 30px;
+    
+}
+
+.quiz-form-title {
+    font-size: 5rem;
+    padding-bottom:30px;
+    font-family: "Orbitron";
+}
+
+.question-title {
+    font-size: 2rem;
+    font-family: "Orbitron";
+
+}
+
+h2 {
+    color: #343A40;
+    margin-top: 2em; 
+  }
+  
+.question {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    padding: 20px;
+    
+  }
+  
+div.answer-choice:hover {
+    border: 2px solid #CED4DA;
+    border-radius: 12px;
+  }
+  
+  .answer-choice button {
+    padding: auto;
+    background: white;
+    border-radius: 12px;
+   
+  }
+
+.answer-choice button:hover {
+    background:#000000;
+    border: 2px solid indigo;
+    transition: background-color 0.2s ease-in;
+  }
+  
+.answer-choice p {
+    display: flex;
+    height: 170px;
+    width: 170px;
+    background: white;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    font-size: 20px;
+    font-family: 'Space Mono';
+  }
+
+  .answer-choice p:hover {
+    background-color:#000000;
+    color:rgb(183, 179, 204);
+    transition: background-color 0.2s ease-in;
+  }
+
+
+
+#result {
+    background-color: #5c6b73;
+    border: none;
+    color: white;
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin: 20px;
+  }
+
+#result:hover {
+
+    box-shadow: 0 12px 16px 0 rgba(0,0,0,0.24), 0 17px 50px 0 rgba(0,0,0,0.19);
+    background-color:#000000;
+    color:rgb(183, 179, 204);
+    border: 2px solid #FFFFFF;
+  }
+
+/* Destination Pages
+================================ */
+.dest {
+  background-color:rgb(0, 0, 0, 0.6);
+  padding: 0px 30px 30px 30px;
+
+}
+
+.dest-title {
+  font-family: "Orbitron";
+  color:rgb(183, 179, 204);
+  text-align: center;
+  font-size: 5rem; 
+}
+
+.dest-text {
+  color:#ffffff;
+  font-size: 2rem;
+  text-align: center;
+  font-family: "Space Mono";
+}
+
+ul.interest-list {
+  list-style-type: circle;
+}
+
+li.ilist {
+  color: #ffffff;
+  font-size: 2rem;
+  text-align: left;
+  font-family: "Space Mono";
+}
+
+.img-row {
+  display: flex;
+
+}
+
+.img-col {
+  float: left;
+  width: 50%;
+  padding: 5px;
+}
+
+img {
+  height: 100%;
+  max-width: 100%;
+}
